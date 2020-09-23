@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud4shop.iml" filepath="$PROJECT_DIR$/cloud4shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-config/shop-config.iml" filepath="$PROJECT_DIR$/shop-config/shop-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-eureka/shop-eureka.iml" filepath="$PROJECT_DIR$/shop-eureka/shop-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-gateway/shop-gateway.iml" filepath="$PROJECT_DIR$/shop-gateway/shop-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-management-log/shop-management-log.iml" filepath="$PROJECT_DIR$/shop-management-log/shop-management-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-management-system/shop-management-system.iml" filepath="$PROJECT_DIR$/shop-management-system/shop-management-system.iml" />
+    </modules>
+  </component>
+</project>

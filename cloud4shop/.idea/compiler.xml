@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop-gateway" />
+        <module name="shop-config" />
+        <module name="shop-eureka" />
+        <module name="shop-management-log" />
+        <module name="shop-management-system" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shop-config" target="1.8" />
+      <module name="shop-eureka" target="1.8" />
+      <module name="shop-gateway" target="1.8" />
+      <module name="shop-management-log" target="1.8" />
+      <module name="shop-management-system" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop-config" options="-parameters" />
+      <module name="shop-eureka" options="-parameters" />
+      <module name="shop-gateway" options="-parameters" />
+      <module name="shop-management-log" options="-parameters" />
+      <module name="shop-management-system" options="-parameters" />
+    </option>
+  </component>
+</project>

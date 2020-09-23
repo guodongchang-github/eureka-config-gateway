@@ -1,0 +1,25 @@
+server:
+  port: 8091
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: shop-management-log
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: shop-config
+      profile: dev
+      label: master
+      name: shop-config
+mybatis:
+  mapper-locations: classpath:mapper/*/*.xml
+logging:
+  level:
+    com:
+      gdc:
+        shopmanagementlog:
+          dao: debug

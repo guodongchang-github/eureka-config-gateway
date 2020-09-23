@@ -1,0 +1,45 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gdc.shopmanagementlog.dao.OperateLogDao">
+    <select id="findOperateLog" parameterType="com.gdc.shopmanagementlog.entity.OperateLog" resultType="com.gdc.shopmanagementlog.entity.OperateLog">
+        select id ,operate_type operateType,description,date,operator,ip from operate_log where 1=1
+        <if test="operateType!=null">
+            and operate_type=#{operateType}
+        </if>
+        <if test="description!=null">
+            and description like concat("%",#{description},"%")
+        </if>
+        <if test="date!=null">
+            and date=#{date}
+        </if>
+        <if test="operator!=null">
+            and operator=#{operator}
+        </if>
+        <if test="ip!=null">
+            and ip=#{ip}
+        </if>
+        <bind name="start" value="(page-1)*pageSize"/>
+        limit #{start},#{pageSize}
+    </select>
+    <select id="findOperateLog4Size" parameterType="com.gdc.shopmanagementlog.entity.OperateLog" resultType="com.gdc.shopmanagementlog.entity.OperateLog">
+        select id ,operate_type operateType,description,date,operator,ip from operate_log where 1=1
+        <if test="operateType!=null">
+            and operate_type=#{operateType}
+        </if>
+        <if test="description!=null">
+            and description like concat("%",#{description},"%")
+        </if>
+        <if test="date!=null">
+            and date=#{date}
+        </if>
+        <if test="operator!=null">
+            and operator=#{operator}
+        </if>
+        <if test="ip!=null">
+            and ip=#{ip}
+        </if>
+    </select>
+
+</mapper>

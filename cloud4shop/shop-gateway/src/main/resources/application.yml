@@ -1,0 +1,21 @@
+server:
+  port: 8082
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  cloud:
+    gateway:
+      enabled: true
+      routes:
+      - id: shop-management-log
+        uri: lb://shop-management-log
+        predicates:
+          - Path= /
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+  application:
+    name: shop-gateway
